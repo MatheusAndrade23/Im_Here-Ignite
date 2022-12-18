@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Home } from "./src/screens/Home";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <Home />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// LogBox: É uma caixa que mostra os erros da aplicação. Poder ser amarela e vermelha (Amarelo: É como um "warning", é um erro mais simples, que não quebra a aplicação)
+// Já o a caixa vermelha representa um erro grave, que quebra a aplicação
+
+// Não colocamos as unidades de medida: Densidade de Pixel
+
+// Existem dois tipos de pixel: O pixel de Hardware: O ponto físico na tela
+// Pixel de software: Pontos dinâmicos na tela, variam de acordo com a densidade de pixel
+// Maior densidade: Mais qualidade
