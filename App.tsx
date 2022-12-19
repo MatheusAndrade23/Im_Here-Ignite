@@ -1,7 +1,18 @@
+import { StatusBar } from "react-native";
 import { Home } from "./src/screens/Home";
 
 export default function App() {
-  return <Home />;
+  return (
+    <>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+
+      <Home />
+    </>
+  );
 }
 
 // LogBox: É uma caixa que mostra os erros da aplicação. Poder ser amarela e vermelha (Amarelo: É como um "warning", é um erro mais simples, que não quebra a aplicação)
